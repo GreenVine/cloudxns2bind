@@ -40,6 +40,9 @@ class Converter {
             const curRecordType = rec[1].toLowerCase();
             if (!tmp[curRecordType]) tmp[curRecordType] = []; // init record type
 
+            if (rec[0] === '@') rec[0] = domain + '.'; // enforce FQDN
+            else rec[0] = `${rec[0]}.${domain}.`;
+
             let recordAdd;
 
             switch (curRecordType) {

@@ -4,8 +4,8 @@ const config = {
         rname: 'hostmaster.example.com'
     },
     domain: 'example.com',
-    infile: './cloudxns_exported.csv',
-    outfile: './rfc1035_dns.conf',
+    infile: 'import/cloudxns.csv',
+    outfile: '../export/rfc1035_dns.txt',
     ttl: 600,
     skipRow: 1
 };

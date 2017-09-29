@@ -6,6 +6,9 @@ Written in Node.js, this module aims to convert [CloudXNS](https://www.cloudxns.
 
 This is a quick implementation, followed by an incident that [CloudXNS](https://www.cloudxns.net/) is suddenly requiring customers to submit ID documents for DNS resolution services continuing to work.
 
+### Installation
+
+
 ### Usage
 
 As a quick solution, all configurations are read from ```index.js``` directly.
@@ -24,8 +27,8 @@ As a quick solution, all configurations are read from ```index.js``` directly.
             rname: 'hostmaster.example.com'
         },
         domain: 'example.com',
-        infile: './cloudxns_exported.csv',
-        outfile: './rfc1035_dns.conf',
+        infile: 'import/cloudxns.csv',
+        outfile: 'export/rfc1035_dns.txt',
         ttl: 600,
         skipRow: 1
     };
