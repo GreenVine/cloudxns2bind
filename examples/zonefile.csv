@@ -1,0 +1,11 @@
+Host record,Type,TTL,Recorded value,Priority,Line
+@,A,600,1.2.3.4,N/A,1
+@,TXT,600,"""v=spf1 include:_spf.google.com ~all""",N/A,1
+@,MX,600,alt4.aspmx.l.google.com.,10,1
+@,MX,600,alt3.aspmx.l.google.com.,10,1
+@,MX,600,alt2.aspmx.l.google.com.,5,1
+@,MX,600,alt1.aspmx.l.google.com.,5,1
+@,MX,600,aspmx.l.google.com.,1,1
+mail,CNAME,600,ghs.googlehosted.com.,N/A,1
+www,A,600,2.3.4.5,N/A,1
+srv,SRV,600,5 0 5269 xmpp-server.l.google.com,N/A,1

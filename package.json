@@ -1,0 +1,13 @@
+{
+  "name": "cloudxns2bind",
+  "version": "0.1.0",
+  "description": "CloudXNS to BIND DNS Records Converter",
+  "main": "src/index.js",
+  "repository": "git@github.com:GreenVine/cloudxns2bind.git",
+  "author": "Robin Liu <commits@codemy.fun>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dns-zonefile": "^0.2.2",
+    "node-csv-parse": "^1.2.0"
+  }
+}
