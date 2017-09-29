@@ -1,16 +1,16 @@
-const converter = require('./convert');
-
-const soa = {
-    mname: 'nameserver.com',
-    rname: 'hostmaster.example.com'
+const config = {
+    soa: {
+        mname: 'nameserver.com',
+        rname: 'hostmaster.example.com'
+    },
+    domain: 'example.com',
+    infile: './cloudxns_exported.csv',
+    outfile: './rfc1035_dns.conf',
+    ttl: 600,
+    skipRow: 1
 };
-const domain = 'example.com';
-const infile = './cloudxns_exported.csv';
-const outfile = './rfc1035_dns.conf';
-const defaultTTL = 600;
-const skipRow = 1;
 
-converter(domain, soa, infile, outfile, defaultTTL, skipRow)
+require('./convert')(config.domain, config.soa, config.infile, config.outfile, config.ttl, config.skipRow)
     .then((zone) => {
         console.log(`File converted successfully:\n\n${zone}`);
     })
