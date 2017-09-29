@@ -8,6 +8,7 @@ This is a quick implementation, followed by an incident that [CloudXNS](https://
 
 ### Installation
 
+Install Node.js 6.x or newer version, and issue the command ```npm install``` or ```yarn install``` to install required dependencies.
 
 ### Usage
 
