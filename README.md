@@ -14,7 +14,7 @@ Install Node.js 6.x or newer version, and issue the command ```npm install``` or
 
 As a quick solution, all configurations are read from ```index.js``` directly.
 
-- SOA (Start of Authority): Set ```mname``` to the primary name server for the domain, ```rname``` to the responsible party
+- SOA (Start of Authority): Set ```mname``` to the primary name server for the domain, ```rname``` to the responsible party (Note: _In the most cases, e.g. you are using a 3rd party DNS service, this value is not required._)
 - Domain: Your domain name
 - Infile: Path to the CloudXNS exported file, in CSV format (Note: _Export all records as an Excel file, then convert to CSV_)
 - Outfile: Path to the output file
